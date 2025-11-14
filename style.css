@@ -1,0 +1,80 @@
+h4 {
+    color:white;
+    
+}
+
+button { 
+    color: darkslateblue;
+    background-color: rgb(20,189,112);
+
+}
+ body{
+    color:rgb(135, 106, 69);
+    background-color:rgb(22, 23, 42);
+ }
+
+ *{
+    color: bisque; 
+}
+
+#box { 
+border: 3px solid white;
+    margin: 30px;
+    padding: 25px;
+    width: 200px;
+    color: white;
+height: 300px;
+content: center;
+
+}
+
+#project {
+    border: 3px solid white;
+    margin: 30px;
+    padding: 25px;
+    width: 200px;
+height: 300px;
+    color: aqua;
+    content: center;
+
+
+}
+
+
+
+ button { 
+    color: rgb(94, 1, 15);
+    
+ }
+
+#repo { 
+    color:rgb(55,65,75);
+}
+
+
+
+
+#boxing{
+    box-sizing: border-box ;
+}
+
+#navigation{ 
+    background-color: rgb(58, 42, 99);
+    margin: 5px;
+    height: 50px;
+}
+#table{
+    border: 5px;
+    margin: 10px;
+    padding: 10px;
+    color: grey;
+    
+    width:1000px;
+}
+img{
+    border-radius: 50%;
+}
+#send{
+    color: lch(from color l c h);
+    background-color: slategrey;
+}
