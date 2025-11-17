@@ -78,3 +78,52 @@ img{
     color: lch(from color l c h);
     background-color: slategrey;
 }
+
+#navigation ul li {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#navigation ul li:hover {
+    background-color: rgb(90, 70, 150); 
+    color: white; 
+    border-radius: 5px;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: bisque;
+}
+
+#navigation a:hover {
+    color: yellow;
+}
+
+
+#navigation {
+    background-color: rgb(58, 42, 99);
+    margin: 0;
+    height: 50px;
+    width: 100%;
+    position: sticky;   
+    top: 0;             
+    z-index: 999;       
+    transition: 0.3s;
+}
+
+
+#navigation:hover {
+    background-color: rgb(80, 60, 140); 
+}
+
+#navigation {
+    position: fixed;   
+    top: 0;            
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(58, 42, 99);
+    z-index: 9999;     
+    transition: 0.3s;
+}
