@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Details</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav id="navigation">
+  <ul>
+    <li class="brand"><img src="name .png" alt="Profile" class="nav-avatar"> Samir Adhikari</li>
+    <div class="nav-right">
+      <a href="index.html"><li>Home</li></a>
+    </div>
+  </ul>
+  
+</nav>
+
+<section class="section-box">
+  <h2>Submitted Contact Details</h2>
+  <div id="details">
+    <p><strong>Name:</strong> <span id="d-name"></span></p>
+    <p><strong>Email:</strong> <span id="d-email"></span></p>
+    <p><strong>Message:</strong> <span id="d-message"></span></p>
+    <div id="empty-msg" style="margin-top:8px; color:#ff6b6b; display:none;">No saved contact details found.</div>
+  </div>
+  <div style="margin-top:12px; display:flex; gap:10px;">
+    <a href="index.html"><button>Back</button></a>
+    <button id="clear-storage">Clear Saved Data</button>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Samir Adhikari. All rights reserved.</p>
+</footer>
+
+<script>
+const nameVal=localStorage.getItem('contactName')||'';
+const emailVal=localStorage.getItem('contactEmail')||'';
+const messageVal=localStorage.getItem('contactMessage')||'';
+document.getElementById('d-name').textContent=nameVal;
+document.getElementById('d-email').textContent=emailVal;
+document.getElementById('d-message').textContent=messageVal;
+const emptyMsg=document.getElementById('empty-msg');
+if(!nameVal&&!emailVal&&!messageVal){emptyMsg.style.display='block'}
+document.getElementById('clear-storage').addEventListener('click',()=>{
+  localStorage.removeItem('contactName');
+  localStorage.removeItem('contactEmail');
+  localStorage.removeItem('contactMessage');
+  document.getElementById('d-name').textContent='';
+  document.getElementById('d-email').textContent='';
+  document.getElementById('d-message').textContent='';
+  emptyMsg.style.display='block';
+});
+</script>
+</body>
+</html>

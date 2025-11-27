@@ -1,232 +1,136 @@
-
-<html> 
-        
-    <head> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samir Portfolio</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-     
-        <Body> 
+<link rel="stylesheet" href="style.css">
+</head>
 
-            <title> web page </title>
-            <div >
-                <div id="navigation">
-            <nav >
-                <ul style="display: flex; list-style: none;  width: 90%;">
+<body>
 
+<nav id="navigation">
+    <ul>
+        <li class="brand"><img src="name .png" alt="Profile" class="nav-avatar"> Samir Adhikari</li>
 
-<a href="samiradhikari.html"><li> samir Adhikari  </li> </a>
-<div style="display: flex; gap: 10px; margin-left: auto;"> 
-<a href="home.html"><li> home </li></a>
-<a href="shortbio.html"><li>short bio</li> </a>
-<a href="education.html"><li>education</li></a>
-<a href="interest.html"><li>Interest</li></a>
-<a href="contact.html"><li>contact</li></a>
-</div>
-</ul>
-</div>
-            </nav>
-            </div>
-           
+        <div class="nav-right">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Short Bio</li></a>
+            <a href="#"><li>Education</li></a>
+            <a href="#"><li>Interests</li></a>
+            <a href="#"><li>Contact</li></a>
+            <button id="theme-toggle">Theme</button>
+        </div>
+    </ul>
+</nav>
 
+<section class="hero">
+    <div class="hero-content">
+        <h2>Hello, I'm</h2>
+        <h1>Samir Adhikari</h1>
+        <p class="tagline">A student exploring technology, creativity, and learning every day.</p>
 
+        <div class="hero-buttons">
+            <button>About Me <i class="fa-solid fa-user"></i></button>
+            <button>Projects <i class="fa-regular fa-file"></i></button>
+        </div>
+    </div>
 
-            <img src="name .png" alt="" width="200px" height="200px" style="float: right; margin: 60px; " >
-            <h2> Hello ,i'm</h2>
+    <img src="name .png" class="profile-img">
+</section>
 
-            <h1>Samir Adhikari</h1>
-            <h3>  "Hi, I'm Samir, a student in Biratnagar International College . <br>
-                In my free time, I enjoy hiking and exploring new places " </h3>
-<button>About me <i class="fa-solid fa-user"></i>  </button>   <button> projects <i class="fa-light fa-file-check"></i>  </button>
-                <h2> About me :</h2>
+<section class="section-box">
+    <h2>About Me</h2>
+    <p>I am Samir Adhikari, born on August 22, 2006. I am currently studying at Biratnagar International College...</p>
+</section>
 
-                <h4>I am Samir Adhikari, born on August 22, 2006, in Biratnagar, Nepal. <br>My academic journey began
-                    at Shikshadeep College, Biratnagar,<br> where I completed my high school education with a focus
-                    on Computer science Currently, <br>I am pursuing a Bachelor of Information Technology (BIT)
-                    degree at Biratnagar International College,<br> which is affiliated with the University of
-                    Wolverhampton in the UK. <br>This program, which offers a UK-based degree right here in Nepal,<br>
-                    provides an ideal environment for me to deepen my understanding of technology and AI. </h4>
+<section class="section-box">
+    <h2>Qualification</h2>
+    <table id="table">
+        <tr><th>Qualification</th><th>Institution</th><th>Board</th><th>Marks</th></tr>
+        <tr><td>Bachelor</td><td>BIC UK</td><td>College</td><td>A</td></tr>
+        <tr><td>High School</td><td>Shikshadeep</td><td>NEB</td><td>A</td></tr>
+        <tr><td>Secondary</td><td>Everest School</td><td>PABSON</td><td>A</td></tr>
+    </table>
+</section>
 
-                    <h2> Qualification </h2>
-<div id="table"> 
-    
-                <table border ="2"> 
-                    <tr> 
-                        <td> Qualification </td>
-                        <td>instition </td>
-                        <td> board </td>
-                        <td> marks </td>
-                    </tr>
-                    <tr> 
-                        <td> Bachelor</td>
-                        <td> bic uk university</td>
-                        <td> clz</td>
-                        <td> A </td>
-                
-                    </tr>
-                    <tr>
-                        <td> high school</td>
-                        <td> shikshadeep College</td>
-                        <td> neb </td>
-                        <td> A </td>
-                    </tr>
-                    <tr>
-                        <td> secondary education</td>
-                        <td> everest secondary school </td>
-                        <td> pabson</td>
-                        <td> A </td>
-                        
-                    
-                    
-                    
-                    </tr>
-                   
-                                </table>
-</div>
+<section class="section-box">
+    <h2>Featured Projects</h2>
+    <div class="projects">
+        <div class="project" data-url="https://example.com/project1"><img src="https://t4.ftcdn.net/jpg/07/55/20/95/360_F_755209501_KcznmUSRDSkV5QbvScnZZF4gQOXq0tgL.jpg"><p>Project 1</p></div>
+        <div class="project" data-url="https://example.com/project2"><img src="https://thumbs.dreamstime.com/b/event-management-concept-meeting-white-office-table-93231489.jpg"><p>Project 2</p></div>
+        <div class="project" data-url="https://example.com/project3"><img src="https://www.q3tech.com/wp-content/uploads/2024/06/Evolution-of-chatbots.jpg"><p>Project 3</p></div>
+    </div>
+</section>
 
+<section class="section-box" id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill"><span>HTML</span><div class="bar"><div class="fill" data-percent="90"></div></div></div>
+        <div class="skill"><span>CSS</span><div class="bar"><div class="fill" data-percent="85"></div></div></div>
+        <div class="skill"><span>JavaScript</span><div class="bar"><div class="fill" data-percent="75"></div></div></div>
+    </div>
+</section>
 
-                                <h2> Interest & Hobbies</h2>
+<section class="section-box" id="contact">
+    <h2>Contact</h2>
+    <form id="contact-form">
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <textarea id="message" placeholder="Message" rows="4"></textarea>
+        <button type="submit">Send</button>
+        <div id="form-status"></div>
+    </form>
+</section>
 
-                                <div style="display: flex;">
+<section class="section-box" id="media">
+    <h2>Media</h2>
+    <div class="media-grid">
+        <video controls>
+            <source src="vid.mp4" type="video/mp4" width="600" height="300"  >
+        </video>
+        <audio controls>
+            <source src="Loveeeeeee Song.mp3" type="audio/mpeg">
+        </audio>
+        <canvas id="myCanvas" width="600" height="300"></canvas>
+    </div>
+</section>
 
-                                <div id="box"> 
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFyZoOHbEeAws92v14Tldjatr50Dzcw87XYg&s" alt="" height="180px" width="180px">
-                                    <P> interest 1</P>
-                                    My interest is : <br>
-                                    I like to swim
-                                </div>
+<section class="section-box" id="gallery">
+    <h2>Image Slider</h2>
+    <div class="slider">
+        <img src="photo1.jpeg" class="slide active" alt="1">
+        <img src="photo2.jpeg" class="slide" alt="2">
+        <img src="photo3.jpeg" class="slide" alt="3">
+        <div class="slider-controls">
+            <button id="prev">Prev</button>
+            <button id="next">Next</button>
+        </div>
+    </div>
+</section>
 
-                                <div id="box"> 
-                                    <img src="https://i.guim.co.uk/img/media/2bbb941e971a80780e75c1ab9c5023a8e6a12361/0_93_3326_1996/master/3326.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=17b9bf94d69763c5e701ba9e76e8f585" alt="" height="180px" width="180px">
-                                    <p> interest 2 </p>
-                                    My interest is : <br>
-                                    I like to swim
-                                </div>
-                                <div id="box"> 
-                                    <img src="https://i1.sndcdn.com/artworks-U1q1jy7BWU6DTxB9-XGcDvA-t500x500.jpg" alt="" height="180px" width="180px">
-                                    <p> interest 3 </p>
-                                    My interest is : <br>
-                                    I like to swim
-                                </div>
-                            </div>
-                            <div style="display: flex;"> 
+<section class="section-box" id="layout-notes">
+    <h2>Layout Notes</h2>
+    <p>Flexbox is one-dimensional (row or column) and great for distributing space and aligning items in a single line. Grid is two-dimensional (rows and columns) and ideal for full-page or section layouts. This portfolio uses CSS Grid to arrange the projects section for a responsive multi-column layout.</p>
+</section>
 
-                                <div id="box"> 
-                                    <img src="https://www.shutterstock.com/image-vector/astronaut-helmet-vector-black-line-600nw-2323631023.jpg" alt="" height="180px" width="180px">
-                                    <P> interest 4</P>
-                                    My interest is : <br>
-                                    I like to swim
-                                </div>
-                                <div id="box"> 
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopRDV4N6UIB4y-smrSVH4S3MOGZzEHnjB3g&s" alt="" height="180px" width="180p0x">
-                                    <p> interest 5</p>
-                                    My interest is : <br>
-                                    I like to swim
-                               </div>
-                               <div id="box"> 
-                                <img src="https://thai.tattoo/wp-content/uploads/2022/12/2022-09-07-14.51.24-2921895294049101746_7926299410.jpg" alt="" height="180px" width="180px">
+<button id="back-to-top">↑</button>
 
-                                <P> interest 6</P>
-                                My interest is : <br>
-                                I like to swim
-                            </div>
-                            </div>
+<footer>
+    <p>&copy; 2025 Samir Adhikari. All rights reserved.</p>
+</footer>
 
-                               
+<script>
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){document.querySelectorAll('.fill').forEach(el=>{el.style.width=el.dataset.percent+'%'});observer.disconnect()}})});observer.observe(document.querySelector('#skills'));
+const form=document.getElementById('contact-form');const statusEl=document.getElementById('form-status');form.addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('name').value.trim();const email=document.getElementById('email').value.trim();const message=document.getElementById('message').value.trim();const emailOk=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);if(!name||!emailOk||!message){statusEl.textContent='Please fill all fields with a valid email.';statusEl.style.color='#ff6b6b';return;}localStorage.setItem('contactName',name);localStorage.setItem('contactEmail',email);localStorage.setItem('contactMessage',message);statusEl.textContent='Saved! Redirecting...';statusEl.style.color='#15bd70';setTimeout(()=>{window.location.href='form-details.html'},800);});
+Array.from(document.querySelectorAll('.project')).forEach(card=>{card.style.cursor='pointer';card.addEventListener('click',()=>{const url=card.dataset.url;if(url)window.location.href=url;});});
+const ctx=document.getElementById('myCanvas').getContext('2d');
+const slides=Array.from(document.querySelectorAll('.slide'));let idx=0;function show(i){slides.forEach((s,k)=>s.classList.toggle('active',k===i))}document.getElementById('next').addEventListener('click',()=>{idx=(idx+1)%slides.length;show(idx)});document.getElementById('prev').addEventListener('click',()=>{idx=(idx-1+slides.length)%slides.length;show(idx)});
+const toggle=document.getElementById('theme-toggle');const applyTheme=t=>{document.body.classList.toggle('dark-mode',t==='dark')};applyTheme(localStorage.getItem('theme')||'light');if(toggle)toggle.addEventListener('click',()=>{const next=document.body.classList.contains('dark-mode')?'light':'dark';localStorage.setItem('theme',next);applyTheme(next)});
+const backTop=document.getElementById('back-to-top');window.addEventListener('scroll',()=>{backTop.style.display=window.scrollY>300?'block':'none'});backTop.addEventListener('click',()=>{window.scrollTo({top:0,behavior:'smooth'})});
+const nav=document.getElementById('navigation');const hero=document.querySelector('.hero');if(hero&&nav){const navObserver=new IntersectionObserver(es=>{es.forEach(e=>{nav.classList.toggle('nav-scrolled',!e.isIntersecting)})});navObserver.observe(hero)}
+</script>
 
-
-
-
-                            
-
-                            <h2> Featured Projects:</h2>
-                            <P> i have worked on many projects over the course of being a web developer,
-                                 here are a few of my live, real-world projects </P>
-
-
-                           
-<div style="display: flex;">
-
-                            <div > 
-                               
-                           
-                            <div id = "project">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYXbbzJoz6bggboLP4k0YVUVaS8pjSreu9kw&s" alt="" height="180px" width="200px">
-                                <p> project description here,project description here, <br>project description here.</p>
-                             
-                            <button>view live</button> <button>oithub repo</button>
-                            
-                            </div>
-
-                        </div > 
-                        <div>
-
-                                <div id = "project">
-                                    <img src="https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148874050.jpg" alt="" height="180px" width="200px">
-                                    <p> project description here,project description here, <br> project description here.</p>
-                                    <button>view live </button> <button id="repo">oithub repo</button>
-                                </div>
-                        </div>
-                                    
-                         
-<div>
-                         <div id = "project">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBJrYqIT3dek8jnas9JoAHClMLrIezaNRucA&s" alt="" height="180px" width="200px">
-
-                            <p> project description here,project description here, <br> project description here.</p>
-                            <button>view live</button>
-                         </div>
-                         </div>
-
-</div>
-
-
-
-    <h2> connet with me </h2>
-    <div  style="float: right;"> 
-        <!-- style="float: right; box-sizing: border-box;" -->
-                                <form id="boxing" >   
-                                    <p>Connet me, Let's make magic together</p><br>
-                                    <label for="fname">name:</label>
-                                    <input type="text" id="fname" name="fname" value="Name" style="color: blue;"><br>
-
-                                    <label for="lname">email:</label>
-                                    <input type="text" id="lname" name="lname" value="email" style="color: blue;"><br>
-
-                                    <lable for="message">Message:   </lable>
-                                    <input id="message" type="text" name="message" value="message" style="color: blue;"><br><br>
-
-                                    
-                                    <input type="submit" value="send" style="background-color:darkcyan; color: blue;">
-                                  </form> 
-</div>
-                         
-                                
-                               <a href="https://www.facebook.com/samir.adhikari.982292"><i class="fa-brands fa-facebook"></i></a>
-                               <i class="fa-brands fa-facebook-messenger"></i>
-                               <a href="https://www.instagram.com/ish_samir/"><i class="fa-brands fa-instagram"></i></a>
-                                <i class="fa-brands fa-safari"></i>
-                                <i class="fa-solid fa-user"></i>
-                                
-                                
-                               <footer>
-                                <P>&copy;2025 samir Adhikari.all right resereved</P>
-
-                               </footer>
-
-
-                            
-                               <link rel="stylesheet" href="style.css">
-                              
-
-                              
-
-
-
-                            
-
-
-            
-        </Body>
-
-
-    </head>
+</body>
 </html>
